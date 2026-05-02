@@ -1,17 +1,17 @@
 cask "wireguide-plus" do
-  version "1.0.0"
-  sha256 "2639afd78ef9d0ec109739b21a24292e1c0c794217159864d22fd9c5b61568d3"
+  version "1.0.1"
+  sha256 "8f3dae9efadd1fdeec6be1a9419e51b8ff91e32db2c0c7d1554ab1953600387e"
 
   url "https://github.com/steiale/wireguide/releases/download/v#{version}/wireguide-plus-v#{version}-darwin-universal.zip"
   name "WireGuide+"
   desc "WireGuard VPN client with enhanced features — fork of WireGuide"
   homepage "https://github.com/steiale/wireguide"
 
-  app "wireguide-plus.app"
+  app "WireGuide+.app"
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/wireguide-plus.app"],
+                   args: ["-cr", "#{appdir}/WireGuide+.app"],
                    sudo: false
   end
 
