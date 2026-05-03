@@ -1,6 +1,6 @@
 cask "wireguide-plus" do
-  version "1.0.9"
-  sha256 "81441b2efa1cb882ae636ac24111408fbd2007e9d6c376bc5ad787fbd3cad448"
+  version "1.0.10"
+  sha256 "d883d7b08264e0bf119d3b29b85726b055fd40a6b59813c3b0e86a9b83f6f60c"
 
   url "https://github.com/steiale/wireguide/releases/download/v#{version}/wireguide-plus-v#{version}-darwin-universal.zip"
   name "WireGuide+"
@@ -8,12 +8,6 @@ cask "wireguide-plus" do
   homepage "https://github.com/steiale/wireguide"
 
   app "WireGuide+.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/WireGuide+.app"],
-                   sudo: false
-  end
 
   uninstall quit: "io.github.steiale.wireguide-plus"
 
