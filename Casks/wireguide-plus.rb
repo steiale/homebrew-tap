@@ -1,19 +1,18 @@
 cask "wireguide-plus" do
-  version "1.0.20"
-  sha256 "f643aaf546133be092e562ec10ef7b8e0c3319a46f466e7f70d1faf815532a38"
+  version "1.0.21"
+  sha256 "5909914fcdb882824e5b7d8885ac323c6d40f19b71bdcdd24cca72acaf3053b4"
 
   url "https://github.com/steiale/wireguide/releases/download/v#{version}/wireguide-plus-v#{version}-darwin-universal.zip"
   name "WireGuide+"
-  desc "WireGuard VPN client with enhanced features — fork of WireGuide"
+  desc "WireGuard VPN desktop client"
   homepage "https://github.com/steiale/wireguide"
 
   app "WireGuide+.app"
 
-  uninstall quit: "io.github.steiale.wireguide-plus"
-
   zap trash: [
     "~/Library/Application Support/wireguide-plus",
-    "~/Library/Logs/wireguide-plus",
-    "~/Library/LaunchAgents/io.github.steiale.wireguide-plus.gui.plist",
+    "~/Library/Preferences/io.github.steiale.wireguide-plus.plist",
+    "/Library/LaunchDaemons/io.github.steiale.wireguide-plus.helper.plist",
+    "/Library/PrivilegedHelperTools/io.github.steiale.wireguide-plus.helper",
   ]
 end
