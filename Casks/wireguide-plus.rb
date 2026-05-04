@@ -1,6 +1,6 @@
 cask "wireguide-plus" do
-  version "1.0.31"
-  sha256 "a6a4b84ce5049611dc06031d7e2e4082ee0c6729e861edc06e86f03688baca4c"
+  version "1.0.32"
+  sha256 "7a5d6bdfef330fc92933bea6b172ffdafc0bc325efc70e4ce392c770192f0099"
 
   url "https://github.com/steiale/wireguide/releases/download/v#{version}/wireguide-plus-v#{version}-darwin-arm64.zip"
   name "WireGuide+"
