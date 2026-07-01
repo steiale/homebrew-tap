@@ -10,13 +10,9 @@ cask "wireguide-plus" do
   app "LockPlus.app"
 
   zap trash: [
-    "~/Library/Application Support/lockplus",
     "~/Library/Application Support/wireguide-plus",
-    "~/Library/Preferences/io.github.steiale.lockplus.plist",
     "~/Library/Preferences/io.github.steiale.wireguide-plus.plist",
-    "/Library/LaunchDaemons/io.github.steiale.lockplus.helper.plist",
     "/Library/LaunchDaemons/io.github.steiale.wireguide-plus.helper.plist",
-    "/Library/PrivilegedHelperTools/io.github.steiale.lockplus.helper",
     "/Library/PrivilegedHelperTools/io.github.steiale.wireguide-plus.helper",
   ]
 end
