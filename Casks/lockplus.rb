@@ -1,6 +1,6 @@
 cask "lockplus" do
-  version "1.0.67"
-  sha256 "7645c3a8ab421d77720d52bd3e5c1931588540314f5d71321222c08f8a8553ea"
+  version "1.0.68"
+  sha256 "e8806bff81e8c38adfcd6e1f9c0bcf2ae8a7c00ce33172b7735c86d750d743ed"
 
   url "https://github.com/steiale/wireguide/releases/download/v#{version}/lockplus-v#{version}-darwin-arm64.zip"
   name "LockPlus"
