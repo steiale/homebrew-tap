@@ -7,14 +7,14 @@ cask "lockplus" do
   desc "WireGuard + OpenVPN VPN client"
   homepage "https://github.com/steiale/wireguide"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "LockPlus.app"
 
   zap trash: [
-    "~/Library/Application Support/lockplus",
-    "~/Library/Preferences/io.github.steiale.lockplus.plist",
     "/Library/LaunchDaemons/io.github.steiale.lockplus.helper.plist",
     "/Library/PrivilegedHelperTools/io.github.steiale.lockplus.helper",
+    "~/Library/Application Support/lockplus",
+    "~/Library/Preferences/io.github.steiale.lockplus.plist",
   ]
 end
