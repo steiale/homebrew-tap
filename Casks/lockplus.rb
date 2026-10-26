@@ -11,10 +11,19 @@ cask "lockplus" do
 
   app "LockPlus.app"
 
-  zap trash: [
-    "/Library/LaunchDaemons/io.github.steiale.lockplus.helper.plist",
-    "/Library/PrivilegedHelperTools/io.github.steiale.lockplus.helper",
-    "~/Library/Application Support/lockplus",
-    "~/Library/Preferences/io.github.steiale.lockplus.plist",
-  ]
+  zap launchctl: "io.github.steiale.lockplus.helper",
+      trash:     [
+        "/Library/Application Support/lockplus",
+        "/Library/LaunchDaemons/io.github.steiale.lockplus.helper.plist",
+        "/Library/PrivilegedHelperTools/io.github.steiale.lockplus.helper",
+        "/Library/PrivilegedHelperTools/openvpn",
+        "/var/log/lockplus-helper.log",
+        "/var/run/lockplus",
+        "~/Library/Application Support/lockplus",
+        "~/Library/Caches/io.github.steiale.lockplus",
+        "~/Library/LaunchAgents/io.github.steiale.lockplus.gui.plist",
+        "~/Library/Logs/lockplus",
+        "~/Library/Preferences/io.github.steiale.lockplus.plist",
+        "~/Library/WebKit/io.github.steiale.lockplus",
+      ]
 end
