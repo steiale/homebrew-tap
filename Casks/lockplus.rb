@@ -1,11 +1,11 @@
 cask "lockplus" do
-  version "1.1.0"
-  sha256 "95a1a177b72c5ef2c0f13a3523965531da2ff7f98a940ea12d5a5a06347feba0"
+  version "1.2.0"
+  sha256 "114d81541c356f69c10daf0af14e473ce7668093db7ffe01db3887f651a22f7c"
 
-  url "https://github.com/steiale/wireguide/releases/download/v#{version}/lockplus-v#{version}-darwin-arm64.zip"
+  url "https://github.com/steiale/lockplus/releases/download/v#{version}/lockplus-v#{version}-darwin-arm64.zip"
   name "LockPlus"
   desc "WireGuard + OpenVPN VPN client"
-  homepage "https://github.com/steiale/wireguide"
+  homepage "https://github.com/steiale/lockplus"
 
   depends_on macos: :ventura
 
@@ -26,4 +26,9 @@ cask "lockplus" do
         "~/Library/Preferences/io.github.steiale.lockplus.plist",
         "~/Library/WebKit/io.github.steiale.lockplus",
       ]
+
+  caveats <<~EOS
+    If LockPlus is running, quit and reopen it to finish the update.
+    LockPlus 1.2.0 is the last version of LockPlus 1; it offers the move to LockPlus 2.
+  EOS
 end
