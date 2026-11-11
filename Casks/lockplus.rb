@@ -1,6 +1,6 @@
 cask "lockplus" do
-  version "2.0.0"
-  sha256 "28096c8fee5ae917031282e75cc09a732892e91086acd632df5a2221193ae583"
+  version "2.0.1"
+  sha256 "e13a96749ba1d371752ee3accd1ef2b983b35a20a8d81f91f0595b90d9eaf5d6"
 
   url "https://github.com/steiale/lockplus-updates/releases/download/v#{version}/LockPlus.dmg"
   name "LockPlus"
