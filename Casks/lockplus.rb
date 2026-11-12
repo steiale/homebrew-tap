@@ -1,6 +1,6 @@
 cask "lockplus" do
-  version "2.0.1"
-  sha256 "e13a96749ba1d371752ee3accd1ef2b983b35a20a8d81f91f0595b90d9eaf5d6"
+  version "2.0.2"
+  sha256 "f5fba87d4f9255ec6dc685c455b1b74b7a2213351a5b3bea2fa2555a56cc9b02"
 
   url "https://github.com/steiale/lockplus-updates/releases/download/v#{version}/LockPlus.dmg"
   name "LockPlus"
@@ -33,6 +33,7 @@ cask "lockplus" do
     "~/Library/Application Support/wireguide-plus",
     "~/Library/Caches/io.github.steiale.lockplus",
     "~/Library/Caches/io.github.steiale.lockplus.mac",
+    "~/Library/Containers/io.github.steiale.lockplus.mac.validator",
     "~/Library/HTTPStorages/io.github.steiale.lockplus.mac",
     "~/Library/LaunchAgents/io.github.steiale.lockplus.gui.plist",
     "~/Library/LaunchAgents/io.github.steiale.wireguide-plus.gui.plist",
